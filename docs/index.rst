@@ -11,7 +11,7 @@ Getting started
 
 * Try the :ref:`README <readme>` first.
 
-* Help with Thrift itself can be found at the `Apache Thrift` incubator site.
+* Help with Thrift itself can be found at the `Apache Thrift`_ incubator site.
 
 .. _`Apache Thrift`: http://incubator.apache.org/thrift/
 

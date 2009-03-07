@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*$py.class
+*.swp
+*.patch
+*.orig
+*.rej
+build
+dist
+docs/_build/*
+thrifty.egg-info
