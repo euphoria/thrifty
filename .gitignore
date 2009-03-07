@@ -1,6 +1,7 @@
 *.py[co]
 *$py.class
 *.swp
+*.*~
 *.patch
 *.orig
 *.rej

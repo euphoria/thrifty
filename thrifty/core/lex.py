@@ -1,7 +1,7 @@
 """
 Lexer / tokenizer for thrift files
 """
-import ply.lex
+import ply.lex as lex
 
 keywords = (
     'namespace',
@@ -30,17 +30,20 @@ reserved = (
 )
 
 tokens = keywords + reserved + (
-    'COMMA', 'INTEGER', 'FLOAT', 'STRING',
-    'IDENTIFIER',
+    'COMMA', 'INTEGER', 'FLOAT', 'HEX', 'STRING', 'SYMBOL',
+    'IDENTIFIER', 'SILLYCOMM', 'MULTICOMM', 'UNIXCOMMENT',
+    'NEWLINE',
 )
 
 t_ignore = ' \t'
 
 t_COMMA      = r'\,'
-t_INTEGER    = r'\d+'
+t_INTEGER    = r'[+-]?[0-9]+'
 t_FLOAT      = r'((\d*\.\d+)(E[\+-]?\d+)?|([1-9]\d*E[\+-]?\d+))'
+t_HEX        = r'"0x"[0-9A-Fa-f]+'
 t_STRING     = r'\".*?\"'
-t_IDENTIFIER = r'[a-zA-Z_][\.a-zA-Z_0-9]*)'
+t_SYMBOL     = r'[:;\,\{\}\(\)\=<>\[\]]'
+t_IDENTIFIER = r'[a-zA-Z_][\.a-zA-Z_0-9]*'
 
 def t_NEWLINE(t):
     r'\n'
@@ -51,4 +54,11 @@ def t_error(t):
     print('Illegal character %s' % t.value[0])
     t.lexer.skip(1)
 
-lex.lex()
+lexer = lex.lex()
+
+def tokenize(data):
+    lexer.input(data)
+    while True:
+        tok = lexer.token()
+        if not tok: break
+        print tok
