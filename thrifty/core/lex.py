@@ -1,3 +1,6 @@
+"""
+Lexer / tokenizer for thrift files
+"""
 import ply.lex
 
 keywords = (
