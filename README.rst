@@ -1,6 +1,6 @@
-===========
-``thrifty``
-===========
+==================
+``thrifty`` README
+==================
 
 ``thrifty`` is a Python-based generator for Apache Thrift source files.
 
@@ -16,8 +16,14 @@ And install it via::
 
     easy_install -U thrifty
 
+.. _PyPI: http://pypi.python.org
+
 Usage
 =====
 
 ``thrifty`` is invoked from the command-line and accepts similar commands as
 the original Apache Thrift compiler.
+
+An example generating Python and C# output from the Thrift tutorial::
+
+    thrifty --gen python --gen csharp tutorial.thrift
