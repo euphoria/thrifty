@@ -1,5 +1,4 @@
-*.pyc
-*.pyo
+*.py[co]
 *$py.class
 *.swp
 *.patch
@@ -8,4 +7,4 @@
 build
 dist
 docs/_build/*
-thrifty.egg-info
+*.egg-info

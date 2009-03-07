@@ -1,0 +1,14 @@
+Source: thrifty
+Section: devel
+Priority: optional
+Maintainer: Michael Greene <michael.greene@gmail.com>
+Standards-Version: 3.7.2
+Build-Depends: @cdbs@, python-ply (>= 2.5), python-setuptools (>= 0.6c3)
+
+Package: thrifty
+Section: devel
+Architecture: all
+Depends: ${python:Depends}, python-ply, python-setuptools
+Description: parser generator for Apache Thrift files
+ Compile Apache Thrift source code into serialization and service
+ code for multiple programming languages.

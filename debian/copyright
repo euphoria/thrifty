@@ -1,0 +1,17 @@
+This package was debianized by MIchael Greene <michael.greene@gmail.com> on
+Thu, 5 Mar 2009 17:10:11 -0600.
+
+It was originally downloaded from http://github.com/euphoria/thrifty/
+
+Upstream Author: Michael Greene <michael.greene@gmail.com>
+
+Copyright:
+
+    Copyright (C) 2009  Michael Greene
+
+License:
+    
+    Licensed under the Apache License, Version 2.0
+
+On Debian Linux systems, the complete text of the Apache License
+version 2.0 can be found in /usr/share/common-licenses/Apache-2.0
