@@ -1,0 +1,1 @@
+const i32 SIMPLE_CONSTANT = 312

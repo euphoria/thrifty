@@ -1,7 +1,7 @@
 """
 Parser for thrift files
 """
-import ply.yacc as yacc
+from ply import yacc
 from thrifty.core import lex
 
 tokens = lex.tokens
