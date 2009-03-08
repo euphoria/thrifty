@@ -1,4 +1,8 @@
+"""
+Thrifty is a Python-based parser generator for Apache Thrift source
+"""
 __version__ = '0.1'
+__author__ = 'Michael Greene'
 
 try:
     from setuptools import setup, find_packages
@@ -8,13 +12,13 @@ except:
     from setuptools import setup, find_packages
 
 setup(
-    name='thrifty',
+    name='Thrifty',
     version=__version__,
-    description='thrifty is a Python-based generator for Apache Thrift source',
+    description=__doc__,
     long_description=open('README.rst').read(),
     keywords='thrift parser generator serialization rpc',
     license='Apache Software License',
-    author='Michael Greene',
+    author=__author__,
     author_email='michael.greene@gmail.com',
     url='http://github.com/euphoria/thrifty/',
     dependency_links=[],

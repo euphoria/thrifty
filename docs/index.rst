@@ -1,10 +1,10 @@
 .. _index:
 
 ===================================
-Welcome to thrifty's documentation!
+Welcome to Thrifty's documentation!
 ===================================
 
-Everything you need to know about thrifty, all in one place.
+Everything you need to know about Thrifty, all in one place.
 
 Getting started
 ===============

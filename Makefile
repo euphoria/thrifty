@@ -1,4 +1,4 @@
-# Makefile for thrifty parser/generator
+# Makefile for Thrifty parser/generator
 #
 #   This serves no purpose day-to-day, but is used each time someone
 #   would like to smash this file into the Apache Thrift source tree.
