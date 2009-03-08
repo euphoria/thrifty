@@ -4,7 +4,6 @@ Parser for thrift files
 from ply import yacc
 from thrifty.core import lex
 
-tokens = lex.tokens
 
 def p_error(p):
     if p:
@@ -12,7 +11,6 @@ def p_error(p):
     else:
         print("Syntax error at EOF")
 
-tparser = yacc.yacc()
 
 def parse(data, debug=0):
     tparser.error = 0
@@ -20,3 +18,8 @@ def parse(data, debug=0):
     if tparser.error:
         return None
     return parsed
+
+
+tokens = lex.tokens
+
+tparser = yacc.yacc()

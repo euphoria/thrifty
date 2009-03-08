@@ -45,16 +45,17 @@ t_STRING     = r'\".*?\"'
 t_SYMBOL     = r'[:;\,\{\}\(\)\=<>\[\]]'
 t_IDENTIFIER = r'[a-zA-Z_][\.a-zA-Z_0-9]*'
 
+
 def t_NEWLINE(t):
     r'\n'
     t.lexer.lineno += 1
     return t
 
+
 def t_error(t):
     print('Illegal character %s' % t.value[0])
     t.lexer.skip(1)
 
-lexer = lex.lex()
 
 def tokenize(data):
     lexer.input(data)
@@ -62,3 +63,6 @@ def tokenize(data):
         tok = lexer.token()
         if not tok: break
         print tok
+
+
+lexer = lex.lex()
