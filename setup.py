@@ -30,6 +30,9 @@ setup(
     include_package_data=True,
     scripts=['thrifty/bin/thriftyc.py'],
     entry_points="""
+        [pygments.lexers]
+        thrift = thrifty.ext.pygments:ThriftLexer
+
         [thrifty.generators]
         csharp = thrifty.generators.csharp:CSharpGenerator
         html = thrifty.generators.html:HTMLGenerator
