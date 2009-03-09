@@ -1,6 +1,6 @@
 class PythonGenerator(object):
-    name = "Python"
-    alias = "py"
+    name = 'Python'
+    aliases = ['py', 'python']
 
     def get_description(self):
-        return (name, alias)
+        return (self.name, self.aliases)

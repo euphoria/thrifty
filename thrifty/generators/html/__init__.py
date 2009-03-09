@@ -1,6 +1,6 @@
-class HtmlGenerator(object):
-    name = "HTML"
-    alias = "html"
+class HTMLGenerator(object):
+    name = 'HTML'
+    aliases = ['html']
 
     def get_description(self):
-        return (short, name)
+        return (self.name, self.aliases)

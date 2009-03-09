@@ -34,9 +34,9 @@ setup(
     scripts=['thrifty/bin/thriftyc.py'],
     entry_points="""
         [thrifty.generators]
-        csharp = thrifty.genenerators.csharp:CSharpGenerator
+        csharp = thrifty.generators.csharp:CSharpGenerator
         html = thrifty.generators.html:HTMLGenerator
-        py = thrifty.generators.py:PythonGenerator
+        py = thrifty.generators.python:PythonGenerator
     """,
     install_requires=[
         'ply',

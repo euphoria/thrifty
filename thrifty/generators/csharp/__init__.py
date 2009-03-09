@@ -1,6 +1,6 @@
 class CSharpGenerator(object):
     name = 'C#'
-    alias = 'csharp'
+    aliases = ['csharp', 'cs']
 
     def get_description(self):
-        return (name, alias)
+        return (self.name, self.aliases)
