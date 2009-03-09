@@ -7,9 +7,9 @@ class ThriftyOptionParser(OptionParser):
     def format_help(self, formatter=False):
         options_help = OptionParser.format_help(self)
         generators = thrifty.generators.find_plugin_generators()
-        help = options_help + '\n  Available generators:\n'
+        help = options_help + '\nAvailable generators:\n\n'
         for gen in generators:
-            help += '\n    %s (%s)' % (gen.aliases[0], gen.name)
+            help += '  %s (%s)\n' % (gen.aliases[0], gen.name)
         return help
 
 def execute():
