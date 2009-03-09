@@ -1,9 +1,3 @@
-"""
-Thrifty is a Python-based parser generator for Apache Thrift source
-"""
-__version__ = '0.1'
-__author__ = 'Michael Greene'
-
 try:
     from setuptools import setup, find_packages
 except:
@@ -11,17 +5,20 @@ except:
     ez_setup.use_setuptools()
     from setuptools import setup, find_packages
 
+import thrifty
+
+author, email = thrifty.__author__[:-1].split(' <')
+
 setup(
     name='Thrifty',
-    version=__version__,
-    description=__doc__,
+    version=thrifty.__version__,
+    description=thrifty.__doc__,
     long_description=open('README.rst').read(),
     keywords='thrift parser generator serialization rpc',
     license='Apache Software License',
-    author=__author__,
-    author_email='michael.greene@gmail.com',
-    url='http://github.com/euphoria/thrifty/',
-    dependency_links=[],
+    author=author,
+    author_email=email,
+    url=thrifty.__url__,
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
