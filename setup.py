@@ -7,8 +7,8 @@ __author__ = 'Michael Greene'
 try:
     from setuptools import setup, find_packages
 except:
-    from ez_setup import use_setuptools
-    use_setuptools()
+    import ez_setup
+    ez_setup.use_setuptools()
     from setuptools import setup, find_packages
 
 setup(
@@ -33,7 +33,7 @@ setup(
     include_package_data=True,
     scripts=['thrifty/bin/thriftyc.py'],
     entry_points="""
-        [thrifty.generator]
+        [thrifty.generators]
         csharp = thrifty.genenerators.csharp:CSharpGenerator
         html = thrifty.generators.html:HTMLGenerator
         py = thrifty.generators.py:PythonGenerator
