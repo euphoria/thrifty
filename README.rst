@@ -29,6 +29,21 @@ An example generating Python and C# output from the Thrift tutorial::
 
     thriftyc --gen python --gen csharp tutorial.thrift
 
+Features
+========
+
+* Works with Python_ 2.3 or above on virtually any OS
+* Extensible plugin architecture
+
+  * Program in a language not yet suported by Thrifty?
+    Adding a new generator can be done in as little as 50 lines of code!
+    ... MAYBEEEEEEEEEEEEEEEEEEE
+
+* Includes Pygments_ lexer for source code highlighting
+
+.. _Python: http://python.org/
+.. _Pygments: http://pygments.org/
+
 License
 =======
 
