@@ -1,4 +1,5 @@
 import pkg_resources
+from thrifty.core.exceptions import GeneratorNotFound
 
 GENERATOR_ENTRY_POINT = 'thrifty.generators'
 
@@ -18,4 +19,4 @@ def get_generator_by_name(_alias):
     for cls in find_plugin_generators():
         if _alias in cls.aliases:
             return cls()
-    raise ClassNotFound('no generator for alias %r found' % _alias)
+    raise GeneratorNotFound('No generator for alias %r found' % _alias)
