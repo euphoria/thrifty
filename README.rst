@@ -3,6 +3,10 @@ Thrifty README
 ==================
 
 Thrifty is a Python-based generator for `Apache Thrift`_ source files.
+It currently is a **work-in-progress, has very few functional features no
+matter what the documentation says, and is primarily available only to
+encourage further hacking** after a weekend of frustration with the C++-based
+compiler.
 
 You can get Thrifty via ``git``::
 
@@ -37,7 +41,7 @@ Features
 
   * Program in a language not yet suported by Thrifty?
     Adding a new generator can be done in as little as 50 lines of code!
-    ... MAYBEEEEEEEEEEEEEEEEEEE
+    ... we hope.
 
 * Includes Pygments_ lexer for source code highlighting
 
